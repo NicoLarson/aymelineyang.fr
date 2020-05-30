@@ -73,6 +73,7 @@ header ul li a {
 
 /* About */
 #about {
+  border-top: 0.1px solid var(--color-secondaryDark);
   padding-top: 1rem;
   background-color: var(--color-secondary);
   text-align: center;
