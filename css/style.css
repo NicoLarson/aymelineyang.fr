@@ -116,7 +116,11 @@ hr {
 
 /* XP */
 #xp {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
   #xp section {
     background-color: #85a392;
     text-align: center;
@@ -156,6 +160,9 @@ footer {
       header nav ul a {
         color: #85a392;
         text-align: center; }
+      header nav ul li:hover {
+        transition: 0.4s ease-in-out;
+        transform: scale(1.08); }
 
   #about {
     display: flex;
@@ -183,16 +190,16 @@ footer {
     margin: 0 auto;
     padding: 4rem; }
 
-  #xp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh; }
-    #xp section {
-      border-radius: 0.2rem;
-      width: 60%;
-      padding: 4rem;
-      margin: 0 auto; }
+  #xp section {
+    border-radius: 0.2rem;
+    width: 60%;
+    padding: 4rem;
+    margin: 0 auto; }
+    #xp section a {
+      display: block; }
+    #xp section a:hover {
+      transition: 0.4s;
+      transform: scale(1.1); }
 
   footer {
     padding: 1.6rem; }

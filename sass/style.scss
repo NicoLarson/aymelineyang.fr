@@ -75,6 +75,10 @@ hr {
 /* XP */
 #xp {
   padding: 2rem 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   section {
     background-color: $color-primary;
     text-align: center;
@@ -128,6 +132,10 @@ footer {
           color: $color-primary;
           text-align: center;
         }
+        li:hover {
+          transition: 0.4s ease-in-out;
+          transform: scale(1.08);
+        }
       }
     }
   }
@@ -166,17 +174,21 @@ footer {
     }
   }
   #xp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh;
     section {
       border-radius: 0.2rem;
       width: 60%;
       padding: 4rem;
       margin: 0 auto;
+      a {
+        display: block;
+      }
+      a:hover {
+        transition: 0.4s;
+        transform: scale(1.1);
+      }
     }
   }
+
   footer {
     padding: 1.6rem;
     h3 {
