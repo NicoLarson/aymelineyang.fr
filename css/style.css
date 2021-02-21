@@ -49,9 +49,8 @@ main ul li img {
 
 footer p {
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
-  text-transform: uppercase;
   color: var(--color-footer-font);
 }
 @media screen and (max-width: 770px), (max-height: 700px) {
@@ -60,7 +59,7 @@ footer p {
   }
   main ul {
     flex-direction: column;
-    margin: 2rem 0;
+    margin: 4rem 0 2rem;
   }
   main ul li img {
     width: 80vw;
