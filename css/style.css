@@ -20,7 +20,8 @@ header a {
   text-align: center;
   border: 0.2rem solid #222;
   border-top: none;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-weight: bolder;
   transition: all 0.4s;
 }
 
@@ -39,7 +40,7 @@ main ul {
   height: 100%;
 }
 main ul li img {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   width: 24vw;
   height: 24vw;
 }
@@ -54,11 +55,15 @@ footer p {
   body {
     height: 100%;
   }
+  header > i {
+    font-size: 4rem;
+  }
   main ul {
     flex-direction: column;
     margin: 4rem 0 2rem;
   }
   main ul li img {
+    margin: 4rem 0;
     width: 80vw;
     height: 80vw;
   }
