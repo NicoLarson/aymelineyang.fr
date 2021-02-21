@@ -1,3 +1,7 @@
+:root{
+    --color-black0:#000;
+    --color-send:#4cd137;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -7,17 +11,29 @@ body {
 header{
     display: flex;
     align-items: center;
-
 }
 header a {
   margin: 0 auto;
   padding: 1.2rem;
   max-width: 100%;
   text-align: center;
-  border: .4rem solid #222;
+  border: .2rem solid #222;
   border-top: none;
   font-size: 2rem;
+  transition: all .4s;
 }
+
+header a:hover,
+header a:active {
+  background-color: var(--color-send);
+  color: var(--color-black0);
+  border-top: none;
+  box-shadow: 0 0 0.05rem var(--color-send), 0 0 0.25rem var(--color-send),
+    0 0 0.5rem var(--color-send), 0 0 1rem var(--color-send);
+  cursor: pointer;
+}
+
+
 main ul {
   display: flex;
   flex-direction: row;

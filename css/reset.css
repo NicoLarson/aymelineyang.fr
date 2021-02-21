@@ -1,12 +1,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-black2) var(--color-white0);
-
 }
 body {
-font-family: Spartan; 
+font-family: sans-serif; 
 }
 * {
   box-sizing: border-box;
