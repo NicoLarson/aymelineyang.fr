@@ -12,25 +12,43 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
 </head>
 
 <body>
     <header>
-        <a href="#"><i class="fas fa-paper-plane"></i> DEMANDE DE DEVIS</a>
+        <a href="mailto:contact@aymelineyang.fr"><i class="fas fa-paper-plane"></i> DEMANDE DE DEVIS</a>
+        <i class="far fa-arrow-alt-circle-left disapear"></i>
     </header>
 
     <main>
-        <ul>
-            <li><a href=""><img src="./asset/img/BDev.jpg" alt=""></a></li>
-            <li><a href=""><img src="./asset/img/GraphD.jpg" alt=""></a></li>
-            <li><a href=""><img src="./asset/img/WeddP.jpg" alt=""></a></li>
+        <ul id="menuList">
+            <li id="businessDeveloperBtn"><img src="./asset/img/BDev.jpg" alt=""></li>
+            <li id="graphicDesignerBtn"><img src="./asset/img/GraphD.jpg" alt=""></li>
+            <li id="weddingPlannerBtn"><img src="./asset/img/WeddP.jpg" alt=""></li>
+        </ul>
+        <ul id="buisnessDeveloper" class="disapear">
+            <li><img src="./asset/img/BDev.jpg" alt=""></li>
+            <li><img src="./asset/img/BDevxAugCA.jpg" alt=""></li>
+            <li><img src="./asset/img/BDevSp.jpg" alt=""></li>
+        </ul>
+        <ul id="graphicDesigner" class="disapear">
+            <li><img src="./asset/img/GraphD.jpg" alt=""></li>
+            <li><img src="./asset/img/GraphDPlus.jpg" alt=""></li>
+            <li><img src="./asset/img/GraphDSp.jpg" alt=""></li>
+        </ul>
+        <ul id="weddingPlanner" class="disapear">
+            <li><img src="./asset/img/WeddP.jpg" alt=""></li>
+            <li><img src="./asset/img/WeddPOrg.jpg" alt=""></li>
+            <li><img src="./asset/img/WeddSp.jpg" alt=""></li>
         </ul>
     </main>
     <footer>
         <p>
-            &copy; Copyright - <a href="#">NY</a> - 2021
+            &copy; Copyright - <a href="https://nicolasyang.fr">NY</a> - 2021
         </p>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
