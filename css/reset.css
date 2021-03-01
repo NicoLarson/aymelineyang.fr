@@ -3,8 +3,10 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: Spartan;
+  font: 1.6rem Spartan;
+  margin: 0;
 }
+
 * {
   box-sizing: border-box;
   outline: none;
