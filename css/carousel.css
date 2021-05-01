@@ -1,0 +1,36 @@
+header div {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+header div.pic-00,
+header div.pic-01,
+header div.pic-02,
+header div.pic-03,
+header div.pic-04 {
+  opacity: 1;
+  transition: 1.4s;
+}
+
+header div.pic-00 {
+  background: url(../asset/img/carousel/00.jpg) no-repeat fixed center center /
+    cover;
+}
+header div.pic-01 {
+  background: url(../asset/img/carousel/01.jpg) no-repeat fixed center center /
+    cover;
+}
+header div.pic-02 {
+  background: url(../asset/img/carousel/02.jpg) no-repeat fixed center center /
+    cover;
+}
+header div.pic-03 {
+  background: url(../asset/img/carousel/03.jpg) no-repeat fixed center center /
+    cover;
+}
+
+header div.pic-04 {
+  background: url(../asset/img/carousel/04.jpg) no-repeat fixed center center /
+    cover;
+}

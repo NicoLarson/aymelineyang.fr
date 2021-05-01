@@ -1,42 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuList = document.querySelector("#menuList")
-    const businessDeveloper = document.querySelector("#buisnessDeveloper")
-    const graphicDesigner = document.querySelector("#graphicDesigner")
-    const weddingPlanner = document.querySelector("#weddingPlanner")
-    const returnBtn = document.querySelector(".fa-arrow-alt-circle-left")
+    const carousel = document.querySelector('header>div.carousel')
 
-    const businessDeveloperBtn = document.querySelector("#businessDeveloperBtn")
-    const graphicDesignerBtn = document.querySelector("#graphicDesignerBtn")
-    const weddingPlannerBtn = document.querySelector("#weddingPlannerBtn")
+    let i = 0
 
-    businessDeveloperBtn.addEventListener('click', () => {
-        businessDeveloper.classList.remove('disapear')
-        menuList.classList.add('disapear')
-        returnBtn.classList.remove('disapear')
-    })
-
-    graphicDesignerBtn.addEventListener('click', () => {
-        graphicDesigner.classList.remove('disapear')
-        menuList.classList.add('disapear')
-        returnBtn.classList.remove('disapear')
-    })
-
-    weddingPlannerBtn.addEventListener('click', () => {
-        weddingPlanner.classList.remove('disapear')
-        menuList.classList.add('disapear')
-        returnBtn.classList.remove('disapear')
-    })
-
-    returnBtn.addEventListener('click', () => {
-        menuList.classList.remove('disapear')
-        businessDeveloper.classList.add('disapear')
-        graphicDesigner.classList.add('disapear')
-        weddingPlanner.classList.add('disapear')
-        returnBtn.classList.add('disapear')
-    })
-
-
-
-
+    setInterval(() => {
+        if (i == 0 && carousel.classList[1] == 'pic-00') {
+            carousel.classList.add(`pic-0${i}`)
+        } else if (i > 0) {
+            carousel.classList.remove(`pic-0${i - 1}`)
+            carousel.classList.add(`pic-0${i}`)
+        } else if (i == 0 && carousel.classList[1] == 'pic-04') {
+            carousel.classList.remove(`pic-04`)
+            carousel.classList.add(`pic-0${i}`)
+        }
+        i < 4 ? i++ : i = 0
+    }, 4000);
 
 })
