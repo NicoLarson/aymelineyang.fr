@@ -28,7 +28,7 @@ header {
   width: 100%;
   background-color: var(--color-transparent);
   color: var(--color-white);
-  z-index: 5;
+  z-index: 6;
 }
 
 header i.fas {
@@ -264,15 +264,15 @@ main ul.services > li:nth-child(4) {
 
 /* Devis */
 main form {
-  max-width: 60%;
-  margin: 0 auto;
-  padding: 20rem 0;
-  color: var(--color-primary-dark);
+  margin: 12rem auto 0;
+  height: 100vh;
+  width: 60%;
 }
 main form fieldset {
   padding: 1rem 6.2rem;
   border: 0;
   background-color: var(--color-bg-form);
+  color: var(--color-primary-dark);
 }
 main form fieldset legend {
   position: relative;

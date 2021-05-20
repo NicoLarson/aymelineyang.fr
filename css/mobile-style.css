@@ -135,12 +135,16 @@
 
   /* Devis */
   main form {
+    position: relative;
     margin: 0;
-    padding: 20rem 0;
+    padding: 4rem 0 10rem;
+    height: 100%;
+    z-index: 5;
   }
   main form fieldset {
+    margin: 0;
     width: 99vw;
-    padding: 1rem 2rem;
+    padding: 0 4rem;
   }
   main form fieldset legend {
     font-size: 2rem;

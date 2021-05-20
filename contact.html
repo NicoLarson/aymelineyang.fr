@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="Aymeline Yang - Buisness Developer - Graphic Designer - Wedding Planner - Demandez votre devis">
+    <title>Aymeline Yang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile-style.css">
+</head>
+
+<body>
+    <header id="barHide" itemscope itemtype="https://schema.org/Person">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+        <nav>
+            <ul itemscope itemtype="https://schema.org/WebPage">
+                <li class="logo">
+                    <h1 itemprop="name"> <a href="#"><img src="./asset/img/logoAY.png" alt="Logo Aymeline Yang"></a>
+                    </h1>
+                </li>
+                <li itemprop="breadcrumb"><a href="./portfolio.html">Portfolio</a></li>
+                <li itemprop="breadcrumb"><a href="./artwork.html">Artwork</a></li>
+                <li itemprop="breadcrumb"><a href="./services.html">Services</a></li>
+                <li itemprop="breadcrumb"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="contact" action="https://formsubmit.co/contact@aymelineyang.fr" method="POST">
+            <fieldset>
+                <legend>Demande de devis</legend>
+                <p>
+                    <label for="firstName">Prénom*</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </p>
+                <p>
+                    <label for="lastName">Nom*</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </p>
+                <p>
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="phone">Téléphone*</label>
+                    <input type="text" name="phone" id="phone" required>
+                </p>
+                <p>
+                    <label for="message">Message*</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </p>
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <div class="line"></div>
+            </li>
+            <li><a href="#"><i class="fab fa-instagram"></i> <br> Follow me</a> </li></a>
+            <li><a href="./index.html"><img src="./asset/img/logoAY.png" alt="logo-aymeline-yang"></a></li>
+            <li>&copy; Copyright - <a href="https://nicolasyang.fr"> NYANG </a> - 2021</li>
+        </ul>
+    </footer>
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="./js/menu_toogle.js"></script>
+    <script src="./js/nav_bar_scroll_effect.js"></script>
+
+</body>
+
+</html>

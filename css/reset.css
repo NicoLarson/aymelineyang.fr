@@ -45,3 +45,15 @@ a {
   color: #222;
   text-decoration: none;
 }
+
+:root {
+  --color-primary: #c0a393;
+  --color-transparent: #fafafa00;
+  --color-secondary: #e9e9e7;
+  --color-primaryLight: #d6cdc6;
+  --color-white: #fafafa;
+  --color-black: #222;
+  --color-bg-main: #e8e8e6;
+  --color-primary-dark: #9b6257;
+  --color-bg-form: #f5f1ef;
+}
