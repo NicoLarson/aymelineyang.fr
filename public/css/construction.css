@@ -9,6 +9,16 @@ body {
     color: #DFCEA3;
 }
 
+body a:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+body a:first-child img {
+    width: 8rem;
+}
+
 body img {
     width: 16rem;
 }
@@ -52,10 +62,12 @@ body a i {
     body {
         padding: 2rem 0 4rem;
     }
-    body p{
+
+    body p {
         font-size: 1.8rem;
         line-height: 3rem;
     }
+
     body div {
         margin: 1rem 0;
     }
