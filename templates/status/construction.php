@@ -20,7 +20,7 @@
     <img src="./asset/img/construction/02.jpg" alt="pho">
     <p>Page en construction</p>
     <div class="vertical-bar"></div>
-    <p>En attendant, rendez-vous <br> sur ma page instagrame!</p>
+    <p>En attendant, rendez-vous <br> sur ma page instagram!</p>
     <div class="vertical-bar"></div>
     <a href=""><i class="fab fa-instagram"></i>@aymelineyang</a>
     <div class="vertical-bar"></div>

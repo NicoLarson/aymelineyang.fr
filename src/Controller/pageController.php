@@ -28,14 +28,6 @@ class pageController
     {
 
         $form = new ContactType($_POST);
-
-        // <form action="#" method="POST">
-        // <?php
-        // echo $form->input('username');
-        // echo $form->input('password');
-        // echo $form->submit();
-        // </form>
-
         require '../templates/site/contact.php';
     }
     public function construction()
