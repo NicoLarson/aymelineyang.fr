@@ -6,7 +6,7 @@ ob_start();
     <li>Développement commerciale & communication</li>
     <li>Conception graphique & web</li>
     <li>Organisation d'événement</li>
-    <li><a href="#">Portfolio</a></li>
+    <li><a href="index.php?action=portfolio">Portfolio</a></li>
 </ul>
 
 <ul class="artWork" id="artwork">
@@ -16,7 +16,7 @@ ob_start();
             <li>Tableau à exposer</li>
             <li><span>MINIMALISTE</span><br>& <span>personnalisable</span></li>
             <li>
-                <a href="#">Art work</a>
+                <a href="index.php?action=artwork">Art work</a>
             </li>
         </ul>
     </li>
@@ -66,7 +66,7 @@ ob_start();
             </li>
         </ul>
     </li>
-    <li><a href="#">Services</a></li>
+    <li><a href="index.php?action=services">Services</a></li>
     <li>
         <div class="line"></div>
     </li>

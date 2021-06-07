@@ -1,83 +1,105 @@
 @media screen and (max-width: 800px) {
   header i.fas {
     position: absolute;
-    top: 1.4rem;
     right: 0;
     display: inline;
     order: 1;
-    margin: 2rem;
+    margin: 3.2rem;
     cursor: pointer;
   }
+
   header i.fa-times {
     color: #222;
-  }
-  header nav ul:first-child {
-    justify-content: space-between;
-  }
-  header nav ul li:nth-child(2),
-  nav ul li:nth-child(3),
-  nav ul li:nth-child(4),
-  nav ul li:nth-child(5) {
-    display: none;
+    z-index: 2;
   }
 
-  header nav ul:last-child {
-    display: none;
+  header i.fa-bars {
+    z-index: inherit;
+    font-size: 3.2rem;
+    top: 0;
   }
-  nav ul li.logo img {
-    width: 8rem;
-  }
-  header nav.discover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #fff;
-  }
-  header nav.discover ul {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #fff;
-  }
-  nav.discover ul li a {
+
+  header > a.logo {
     display: block;
-    margin-top: 2rem;
+  }
+
+  header > a.logo img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 10rem;
+    padding: 0;
+    margin: 0;
+    z-index: inherit;
+  }
+
+  /* NAVBAR */
+  header nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.6s;
+  }
+
+  header nav.discover {
+    left: 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    padding: 1.6rem 0;
+  }
+
+  header nav ul li a {
     color: #222;
   }
-  nav.discover ul li.logo {
-    order: -1;
+
+  header nav ul li.logo {
+    padding: 0;
+    margin: 0;
     filter: invert();
   }
-  nav.discover ul li:nth-child(2),
-  nav.discover ul li:nth-child(3),
-  nav.discover ul li:nth-child(4),
-  nav.discover ul li:nth-child(5) {
-    display: inline;
-  }
-  header nav.discover ul:last-child {
+
+  header nav ul:nth-child(2) {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    margin: 2rem;
     width: 40%;
-    margin-top: 4rem;
-    border-top: 0.1rem solid var(--color-primary-dark);
+    border-top: solid #222 1px;
   }
+
+  header nav ul:nth-child(2) i {
+    margin: 1rem 2rem 0;
+    font-size: 3.2rem;
+  }
+
+  /* Bar Discover*/
+
   /* Main */
   /* Presentation */
   main ul.presentation {
     padding: 2rem;
   }
+
   main ul.presentation li {
     padding: 2rem;
     font-size: 1.2rem;
     letter-spacing: 0rem;
   }
+
   main ul.presentation li:last-child {
     margin: 1rem 0 2rem;
   }
+
   main ul.presentation li:last-child a {
     padding: 1rem 4rem;
     letter-spacing: 0rem;
@@ -89,20 +111,25 @@
     font-size: 1.2rem;
     letter-spacing: 0rem;
   }
+
   main ul.artWork li:first-child ul li:first-child {
     font-size: 2.4rem;
     letter-spacing: 1.6rem;
   }
+
   main ul.artWork li:first-child ul li:first-child span {
     font-size: 1.2rem;
   }
+
   main ul.artWork li:first-child ul li:nth-child(3) span {
     line-height: 4rem;
     letter-spacing: 1rem;
   }
+
   main ul.artWork li:first-child ul li a {
     padding: 1.4rem 8rem 1.2rem;
   }
+
   main ul.artWork img {
     top: 0;
     max-width: 80vw;
@@ -112,22 +139,27 @@
   main ul.services > li > ul > li > ul > li {
     font-size: 1.2rem;
   }
+
   main ul.services > li > ul > li > ul > li span {
     letter-spacing: 0.8rem;
   }
+
   main ul.services > li > ul > li > ul > li:not(li:nth-child(2)) {
     text-transform: uppercase;
     line-height: 2rem;
     letter-spacing: 0.4rem;
   }
+
   main ul.services > li > ul > li > ul > li:first-child {
     font-size: 2rem;
   }
+
   main ul.services > li > ul > li > ul > li:nth-child(2) {
     font-size: 2rem;
     text-align: center;
     line-height: 3.2rem;
   }
+
   main ul.services > li > ul > li > ul > li:nth-child(2) span {
     font-size: 2rem;
     text-transform: uppercase;
@@ -141,17 +173,21 @@
     height: 100%;
     z-index: 5;
   }
+
   main form fieldset {
     margin: 0;
     width: 99vw;
     padding: 0 4rem;
   }
+
   main form fieldset legend {
     font-size: 2rem;
   }
+
   main form fieldset label {
     font-size: 1.2rem;
   }
+
   main form fieldset input {
     height: 2.4rem;
     margin-top: 0.2rem;
@@ -161,6 +197,7 @@
   main form fieldset p textarea {
     margin-top: 0.1rem;
   }
+
   main form fieldset input[type="submit"] {
     display: block;
     max-width: 50%;
@@ -171,12 +208,15 @@
     font-size: 1rem;
     font-weight: bolder;
   }
+
   footer ul li a i {
     font-size: 4rem;
   }
+
   footer ul li img {
     width: 20rem;
   }
+
   footer ul li:last-child,
   footer ul li:last-child a {
     font-size: 0.8rem;

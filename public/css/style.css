@@ -34,12 +34,21 @@ header {
 header i.fas {
   display: none;
 }
+
 header {
   transition: 0.8s;
 }
+
 header.color {
   background-color: var(--color-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
+header > a.logo {
+  display: none;
+}
+
+/* NAVBAR */
 header nav {
   display: flex;
   align-items: center;
@@ -54,29 +63,37 @@ header nav ul {
   justify-content: space-evenly;
   width: 100%;
 }
+
 header nav h1 a img {
   width: 10rem;
 }
+
 header nav ul li {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
+
 header nav ul li.logo {
   order: 0;
 }
+
 header nav ul li:nth-child(2) {
   order: -1;
 }
+
 header nav ul li:nth-child(3) {
   order: -1;
 }
+
 header nav ul li:nth-child(4) {
   order: 0;
 }
+
 header nav ul li a {
   color: #fff;
 }
+
 header nav ul:last-child {
   display: none;
 }
@@ -86,13 +103,15 @@ main {
   padding: 12rem 0 0;
   background-color: var(--color-bg-main);
 }
+
 main div.carousel {
   position: relative;
   height: 100vh;
   max-width: 100vw;
-  background: url("../asset/img/carousel/00.jpg") center/cover;
+  background: url("../asset/img/carousel/00.jpg") fixed center/cover;
   bottom: 12rem;
 }
+
 /* Presentation */
 main ul.presentation {
   max-width: 60%;
@@ -103,6 +122,7 @@ main ul.presentation {
   text-transform: uppercase;
   text-align: center;
 }
+
 main ul.presentation li {
   padding: 2rem;
   font-size: 2rem;
@@ -112,6 +132,7 @@ main ul.presentation li {
 main ul.presentation li:last-child {
   margin-top: 8rem;
 }
+
 main ul.presentation li:last-child a {
   padding: 1.4rem 8rem 0.8rem;
   background-color: var(--color-primary);
@@ -138,14 +159,17 @@ main ul.artWork img {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   z-index: 4;
 }
+
 main ul.artWork li:first-child ul {
   text-align: center;
 }
+
 main ul.artWork li:first-child ul li {
   padding: 3.2rem 0;
   font-size: 2rem;
   letter-spacing: 0.44rem;
 }
+
 main ul.artWork li:first-child ul li:first-child {
   display: flex;
   flex-direction: row;
@@ -155,19 +179,23 @@ main ul.artWork li:first-child ul li:first-child {
   color: var(--color-primary);
   letter-spacing: 1.6rem;
 }
+
 main ul.artWork li:first-child ul li:first-child span {
   padding: 1rem 0;
   font-size: 3rem;
 }
+
 main ul.artWork li:first-child ul li:nth-child(3) span {
   line-height: 6rem;
   letter-spacing: 1.1rem;
 }
+
 main ul.artWork li:first-child ul li:nth-child(3) span:last-child {
   display: inline-block;
   position: relative;
   bottom: 0.24rem;
 }
+
 main ul.artWork li:first-child ul li a {
   display: block;
   padding: 1.4rem 8rem 1rem;
@@ -176,6 +204,7 @@ main ul.artWork li:first-child ul li a {
   color: var(--color-white);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 main ul.artWork li ul li div.line {
   position: relative;
   left: 50%;
@@ -200,19 +229,23 @@ main ul.services > li:nth-child(1) {
   right: 25vw;
   z-index: 3;
 }
+
 main ul.services > li > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 main ul.services > li > ul > li:nth-child(2) > ul > li:nth-child(2) {
   text-align: center;
   align-items: center;
 }
+
 main ul.services > li > ul > li > ul {
   padding: 2rem;
 }
+
 main ul.services > li > ul > li > ul > li {
   padding: 2rem 0;
 }
@@ -226,17 +259,21 @@ main ul.services > li > ul > li > ul > li:not(li:nth-child(2)) {
   line-height: 2rem;
   letter-spacing: 0.4rem;
 }
+
 main ul.services > li > ul > li > ul > li:first-child {
   font-size: 2.4rem;
 }
+
 main ul.services > li > ul > li > ul > li:nth-child(2) {
   font-size: 2rem;
   text-align: left;
 }
+
 main ul.services > li > ul > li > ul > li:nth-child(2) span {
   font-size: 3rem;
   text-transform: uppercase;
 }
+
 main ul.services > li > ul > li > ul > li:last-child a {
   padding: 1.2rem 2rem 1rem;
   border: 0.32rem solid var(--color-primary-dark);
@@ -245,9 +282,11 @@ main ul.services > li > ul > li > ul > li:last-child a {
   text-transform: uppercase;
   color: var(--color-primary-dark);
 }
+
 main ul.services > li:nth-child(3) {
   margin-top: 4rem;
 }
+
 main ul.services > li:nth-child(3) a {
   display: inline-block;
   padding: 1.4rem 8rem 1rem;
@@ -256,6 +295,7 @@ main ul.services > li:nth-child(3) a {
   color: var(--color-white);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 main ul.services > li:nth-child(4) {
   position: relative;
   top: 10rem;
@@ -268,12 +308,14 @@ main form {
   height: 100vh;
   width: 60%;
 }
+
 main form fieldset {
   padding: 1rem 6.2rem;
   border: 0;
   background-color: var(--color-bg-form);
   color: var(--color-primary-dark);
 }
+
 main form fieldset legend {
   position: relative;
   bottom: 4rem;
@@ -283,11 +325,13 @@ main form fieldset legend {
   text-align: center;
   letter-spacing: 1rem;
 }
+
 main form fieldset label {
   display: block;
   margin: 2rem 0 0.4rem;
   font-size: 1.4rem;
 }
+
 main form fieldset input {
   height: 3.2rem;
 }
@@ -301,6 +345,7 @@ main form fieldset p:nth-child(3) {
 main form fieldset p:nth-child(2) {
   margin-right: 1%;
 }
+
 main form fieldset input,
 main form fieldset p textarea {
   border: 0;
@@ -308,6 +353,7 @@ main form fieldset p textarea {
   padding: 1rem;
   border-bottom: 0.01rem solid var(--color-primary);
 }
+
 main form fieldset input[type="submit"] {
   margin: 2rem 0;
   padding: 0;
@@ -326,16 +372,19 @@ footer {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
+
 footer ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 footer ul li:first-child {
   position: relative;
   bottom: 23rem;
 }
+
 footer ul li a {
   display: flex;
   flex-direction: column;
@@ -344,22 +393,25 @@ footer ul li a {
   text-transform: uppercase;
   color: var(--color-white);
 }
+
 footer ul li a i {
   padding: 0.4rem;
   color: var(--color-white);
   font-size: 6.2rem;
 }
+
 footer ul li img {
   width: 20rem;
 }
+
 footer ul li:last-child,
 footer ul li:last-child a {
   font-size: 1.2rem;
 }
+
 footer ul li:last-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
-
